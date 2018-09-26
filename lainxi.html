@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script type="text/javascript">
+//原因，变量提升和函数提升
+//1.JavaScript在运行之前有一个预处理过程，会把var function 关键词定义的变量和函数提升到作用域的顶部
+//2.变量的提升规则，只把变量的声明提升，赋值不提升。
+	fun();
+	function fun(){
+		console.log("A");
+	}
+	var fun = function(){
+		console.log("B");
+	}
+</script>
